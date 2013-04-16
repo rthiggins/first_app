@@ -22,6 +22,12 @@ end
 
 gem 'jquery-rails', '2.0.2'
 
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
